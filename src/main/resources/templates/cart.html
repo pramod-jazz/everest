@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace="welcome :: head"></head>
+    <body>
+
+    <table border="1" style="width:300px">
+    <th:block th:each="item : ${cart.items}">
+        <tr>
+            <td th:text="${item.itemName}">Item Name</td>
+            <td th:text="${item.itemType}">Item Type</td>
+        </tr>
+    </th:block>
+    </table>
+
+    <button value="catlog">Catalog</button> &nbsp; <button value="checkout">Checkout</button>
+
+
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="welcome :: head"></head>
+<body>
+
+
+                <h2>Create User</h2>
+
+                <form action="user" method="post">
+                    <b>Login:</b> <input type="text" name="login"></input> <p/>
+                    <b>Password:</b>   <input type="password" name="password"></input> <p/>
+                    <b>Name:</b> <input type="text" name="username"></input> <p/>
+                    <b>Address Line 1:</b><input type="text"  name="address1"> </input><p/>
+                    <b>Address Line 2:</b> <input type="text" name="address2"></input> <p/>
+                    <b>City:</b><input type="text" name="city"> </input><p/>
+                    <b>State:</b>  <input type="text" name="state"></input> <p/>
+                    <b>Zip:</b>  <input type="text" name="password"></input> <p/>
+                    <b>Country:</b><input type="text" name="country"> </input><p/>
+                    <b>Credit Card:</b><input type="text" name="creditcard"> </input><p/>
+
+                    <p/>
+
+                    <button  >Create User  </button>
+                </form>
+
+
+    </body>
+</html>
